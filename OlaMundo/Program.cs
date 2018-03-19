@@ -10,8 +10,13 @@ namespace OlaMundo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Ola Mundo ! ");
-            Console.ReadKey();
+            System.Console.WriteLine("Ola Mundo", args.Length);
+            Console.ReadLine();
+
+            for (int i = 0; i < args.Length; i++)
+            {
+                System.Console.WriteLine("Arg[{0}] = [{1}]", i, args[i]);
+            }
         }
     }
 }
